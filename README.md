@@ -1,1 +1,903 @@
-# ADA_LAB-UE223026-
+![image](https://github.com/Diksha0416/ADA_LAB-UE223026-/assets/134716037/2eb0cee9-b912-4731-9a18-92ac9cf059b8)# ADA_LAB-UE223026-
+                                                                              LAB 1
+                                                  PRACTICAL 1
+Aim: To find time complexity of Selection Sort to represent it through graph.
+Description: 
+This C++ code measures the average time taken to sort randomly generated arrays using the selection sort algorithm and writes this data to a file named "data.txt". It utilizes functions for file writing, selection sorting, and timing measurements to analyze sorting performance for different array sizes.
+Algorithm:
+Selection Sort
+•	Start with the first element as the minimum.
+•	Compare the minimum element with the next element in the array.
+•	If the next element is smaller, update the minimum element.
+•	Repeat steps 2 and 3 for all elements in the array.
+•	Swap the minimum element with the first unsorted element.
+•	Move to the next unsorted element and repeat steps 2-5 until the entire array is sorted.
+
+Time Complexity:
+The time complexities of Selection Sort are as follows:
+1.	Best-case time complexity: O(n^2)
+2.	Worst-case time complexity: O(n^2)
+3.	Average-case time complexity: O(n^2)
+Here, n represents the number of elements in the array or list being sorted.
+
+Graph:
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                          PRACTICAL 2
+Aim: To find time complexity of Tower of Hanoi and to represent it through graph.
+Description: 
+This C++ code implements the Tower of Hanoi problem using recursion. It defines a function th() to solve the Tower of Hanoi problem for a given number of disks (n) and outputs the moves to transfer disks from the source peg to the destination peg. The Algo() function measures the average time taken to solve the Tower of Hanoi problem for different numbers of disks (from 1 to 9) and writes this data to a file named "data.txt" in CSV format. The main() function calls Algo() to perform these operations.
+Algorithm:
+Tower of Hanoi 
+a.	Define a function th(n, source, destination, spare) to move n disks from the source peg to the destination peg using the spare peg as an auxiliary.
+b.	If n equals 1:
+•	Print the move of the disk from the source peg to the destination peg.
+c.	Else:
+•	Recursively call th(n-1, source, spare, destination) to move n-1 disks from the source peg to the spare peg using the destination peg as an auxiliary.
+•	Print the move of the nth disk from the source peg to the destination peg.
+•	Recursively call th(n-1, spare, destination, source) to move n-1 disks from the spare peg to the destination peg using the source peg as an auxiliary.
+
+Time Complexity:
+The time complexities for the Tower of Hanoi algorithm are typically described in terms of the number of moves required to solve the problem. Here are the complexities:
+1.	Best-case time complexity: O(2^n)
+2.	Average-case time complexity: O(2^n)
+3.	Worst-case time complexity: O(2^n)
+In all cases, the number of moves required grows exponentially with the number of disks (n) in the Tower of Hanoi problem.
+
+Graph:
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+                                           PRACTICAL 3
+Aim: To find time complexity of Horner and to represent it through graph.
+Description:
+This C++ code implements Horner's method for polynomial evaluation and measures the average time taken to evaluate polynomials of increasing degrees (from 1 to 1000 in steps of 10), storing the results in a file named "data.txt" and displaying them on the console.
+Algorithm:
+Horner
+1.	Define a function Horner(a, n, m, x) to evaluate a polynomial using Horner's method, where a[] is the array of coefficients, n is the current index, m is the highest degree of the polynomial, and x is the value at which to evaluate the polynomial.
+2.	If n equals m:
+•	Return the coefficient a[m].
+3.	Else:
+•	Return (a[n] + x * Horner(a,n+1,m,x).
+
+Time Complexity:
+For Horner's method of polynomial evaluation:
+1.	Best-case time complexity: O(n)
+2.	Average-case time complexity: O(n)
+3.	Worst-case time complexity: O(n)
+ where n is the degree of the polynomial being evaluated.
+Graph:
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                           PRACTICAL 4
+Aim: To find time complexity of Truth Table function generator and to represent it through graph.
+Description:
+This C++ code generates and prints all possible combinations of "T" and "F" for a given length (up to 10), measuring the average time taken to generate these combinations and storing the results in a file named "data.txt."
+Algorithm:
+Boolean
+1.	Define a function TT(x, k, n) to generate all possible truth table combinations for a Truth Table expression with n variables, where x[] is the array to store the current combination, k is the current index, and n is the total number of variables.
+2.	If k equals n+1:
+•	Print the current combination stored in the array x[].
+3.	Else:
+•	Set x[k] to 'T' and recursively call TT(x, k+1, n) to generate combinations with the current variable set to true.
+•	Set x[k] to 'F' and recursively call TT(x, k+1, n) to generate combinations with the current variable set to false.
+
+Time Complexity:
+The time complexity for generating a truth table (T/F table) depends on the number of variables n in the boolean expression for which the truth table is being generated.
+1.	Best-case time complexity: O(2^n)
+2.	Average-case time complexity: O(2^n)
+3.	Worst-case time complexity: O(2^n)
+Here, n represents the number of variables in the boolean expression. The reason for the exponential time complexity is that a truth table for a boolean expression with n variables has 2^n rows, each representing a unique combination of truth values for the variables. Generating all these combinations requires exponential time as the number of variables increases.
+
+Graph:
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                           PRACTICAL 5
+Aim: To find time complexity of Sum of n numbers and to represent it through graph.
+Description:
+This C++ code measures the average time taken to compute the sum of elements in an array using recursion, for array sizes ranging from 13,000 to 99,000 in steps of 10,000. It generates random arrays, performs the sum calculation 10 times for each array size, and records the timing data in a file named "data.txt" while displaying the results on the console.
+Algorithm:
+Sum of n numbers
+1.	Define a function sum(a, k) to calculate the sum of elements in an array up to index k, where a[] is the array of integers and k is the index.
+2.	If k equals 1:
+•	Return the value of the first element a[0].
+3.	Else:
+•	Return (a[k - 1] + sum(a, k - 1)), which is the sum of the current element a[k - 1] and the sum of elements up to index k - 1.
+
+
+Time Complexity:
+For sum of n numbers:
+1.	Best-case time complexity: O(1)
+2.	Average-case time complexity: O(n)
+3.	Worst-case time complexity: O(n)
+These complexities represent the time required to compute the sum of n numbers using recursion under different scenarios.
+
+Graph:
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                              LAB 2
+                                           PRACTICAL 1
+Aim: To find time complexity of Binary Search and to represent it through graph.
+Description:
+This C++ code implements binary search on a sorted array of integers, measuring the average time taken to find a specified element in arrays of increasing sizes (from 10 to 990 elements in steps of 100). It generates random arrays, sorts them, performs binary search 10 times for each array size, displays the search results, and records the timing data in a file named "data.txt."
+Algorithm:
+Binary Search
+1.	Define a function binary_search(a, low, high, el) to perform binary search on a sorted array a[] for the element el within the range [low, high].
+2.	While low is less than high:
+•	Calculate the middle index as mid = (low + high) / 2.
+•	If el is less than the middle element a[mid], update high = mid - 1.
+•	If el is greater than the middle element a[mid], update low = mid + 1.
+•	If el is equal to the middle element a[mid], return mid as the index where el is found.
+3.	If the element el is not found within the range [low, high], return an appropriate indication (e.g., -1 or another value that indicates not found).
+
+Time Complexity:
+For Binary search time complexities: 
+1.	Best-case time complexity: O(1)
+2.	Average-case time complexity: O(logn)
+3.	Worst-case time complexity: O(logn)
+These complexities demonstrate the efficiency of binary search, particularly in sorted lists, where it can quickly find elements with a logarithmic time complexity.
+
+Graph:
+ 
+
+
+
+
+
+                                           PRACTICAL 2
+Aim: To find time complexity of Power and to represent it through graph.
+Description :
+This C++ code calculates the power of a number using an optimized approach based on exponentiation by squaring. It measures the average time taken to compute the square of numbers from 1 to 199 in steps of 10, repeating the computation 10 times for each number and recording the timing data in a file named "data.txt" while displaying the results on the console.
+Algorithm:
+Power
+1.	Define a function power(n, x) to calculate x^n, where n is the exponent and x is the base.
+2.	Initialize a variable power to 1.
+3.	While n is not equal to 0:
+•	If n is even (n % 2 == 0):
+I.	Update x = x * x (square x).
+II.	Update n = n / 2 (divide n by 2).
+•	If n is odd: 
+I.	Update power = power * x (multiply power by x)
+4.	Return the final value of power.
+
+Time Complexity:
+For Power function time complexities: 
+1.	Best-case time complexity: O(1)
+2.	Average-case time complexity: O(log2n)
+3.	Worst-case time complexity: O(log2n)
+These complexities demonstrate that the exponentiation by squaring algorithm is efficient, especially for large exponents, as it reduces the number of multiplications required compared to a naive approach.
+
+Graph:
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                           PRACTICAL 3
+Aim: To find time complexity of combining two sorted sort and to represent it through graph.
+Description:
+This C++ code implements a function to merge two sorted arrays into a third sorted array. It measures the average time taken to perform this operation for increasing array sizes (from 10,000 to 1,000,000 elements) and records the timing data in a file named "data.txt" while displaying the results on the console.
+Algorithm:
+Combining two sorted list
+1.	Define a function sorted_list(list1, list2, n, m) to merge two sorted lists list1 and list2 of sizes n and m, respectively, into a sorted list list3.
+2.	Initialize variables x = 0, y = 0, z = 0.
+3.	Create an array list3 of size m + n to store the merged sorted list.
+4.	While both x and y are less than their respective list sizes (x < n and y < m):
+•	If list1[x] < list2[y]:
+I.	Assign list3[z] = list1[x].
+II.	Increment x and z by 1.
+•	Else:
+I.	Assign list3[z] = list2[y].
+II.	Increment y and z by 1.
+5.	After the above loop, if there are remaining elements in list1, copy them to list3.
+6.	After the above loop, if there are remaining elements in list2, copy them to list3.
+
+Time Complexity:
+For combining 2 sorted lists:
+1.	Best-case time complexity: O(m+n)
+2.	Average-case time complexity: O(m+n)
+3.	Worst-case time complexity: O(m+n)
+This analysis demonstrates that the time complexity for combining two sorted lists using the merge approach is linear in the combined size of the lists (m+n).
+
+Graph:
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                           PRACTICAL 4
+Aim: To find time complexity of code for finding actual position and to represent it through graph.
+Description:
+This C++ code implements the partitioning step of the quicksort algorithm to arrange elements such that all elements smaller than a chosen pivot are placed before it, and all greater elements are placed after it. It measures the average time taken to perform this operation for increasing array sizes (from 1,000 to 100,000 elements) with randomly generated elements, recording the timing data in a file named "data.txt" and displaying the results on the console.
+Algorithm:
+To find actual position of number
+1.	Define a function actual_pst(a, n, el) to rearrange the elements in an array a[] such that all elements less than el are before it, and all elements greater than el are after it. The function also returns the index of the first occurrence of el in the original array.
+2.	Initialize variables grt = 0, sml = 0, indx_pst, t, fst = 0, last = n - 1, i, and j.
+3.	Iterate through the array a[] from index 0 to n - 1:
+•	If a[i] is less than el, increment sml.
+•	If a[i] is greater than el, increment grt.
+•	If a[i] is equal to el, set indx_pst to i.
+4.	Swap a[indx_pst] with a[sml].
+5.	Initialize fst = 0 and last = n - 1 for the partitioning process.
+6.	While fst is less than last:
+•	Iterate from fst to sml - 1:
+•	Iterate from last to sml:
+•	If fst is less than last, swap a[fst] with a[last].
+7.	The function does not return any value (void).
+
+Time Complexity:
+For finding actual position:
+1.	Best-case time complexity: O(nlogn)
+2.	Average-case time complexity: O(nlogn)
+3.	Worst-case time complexity: O(n^2)
+These complexities describe the behavior of the actual_pst function in different scenarios based on the input array's arrangement around the pivot element el.
+
+Graph:
+ 
+
+
+
+
+
+
+
+
+
+
+                                                                              LAB 3
+                                           PRACTICAL 1
+Aim: To find time complexity of Merge Sort and to represent it through graph.	
+Description:
+This C++ code implements the merge sort algorithm and measures the average time taken to sort randomly generated arrays of increasing sizes (from 1 to 10,000 elements). It records the timing data in two separate files ("data.txt" and "data2.txt") for different scale factors, demonstrating the time complexity of merge sort as (O(nlogn)). Additionally, it includes a function (`complex()`) to calculate and write the time complexity data based on (nlog n) for comparison.
+Algorithm:
+Merge
+1.	Calculate the sizes of the subarrays: n1 = mid - left + 1 and n2 = right - mid.
+2.	Create temporary arrays L and R of sizes n1 and n2, respectively.
+3.	Copy elements from the original array a[] to L and R.
+4.	Merge the elements from L and R back into array a[] in sorted order.
+MergeSort
+1.	If low is less than high:
+•	Calculate mid as (low + high) / 2.
+•	Recursively call MergeSort for the left and right halves of the array: MergeSort(a, low, mid) and MergeSort(a, mid + 1, high).
+•	Merge the sorted halves using the merge function.
+Complex
+1.	Calculate t as i * log(i).
+2.	Write the pair (i, t) to a file using WriteToFile(i, t) function.
+
+Time Complexity:
+For merge sort :
+1.	Best-case time complexity: O(nlogn)
+2.	Average-case time complexity: O(nlogn)
+3.	Worst-case time complexity: O(nlogn)
+Merge Sort's consistent time complexity across different scenarios makes it a popular choice for sorting large datasets efficiently.
+
+Graph:
+ 
+
+
+
+
+                                           PRACTICAL 2
+Aim: To find time complexity of Quick Sort and to represent it through graph.
+Description:
+This C++ code implements the quicksort algorithm and measures the average time taken to sort randomly generated arrays of increasing sizes (from 1 to 10,000 elements). It records the timing data in "data.txt" and "data2.txt" for different scale factors, showcasing the time complexity of quicksort as (O(n log n)). Additionally, it includes functions (`average()` and `worst()`) to calculate and write the time complexity data based on (n log n) and (n^2), respectively, for comparison.
+Algorithm:
+Partition
+1.	Define a function Partition(a, low, high) to partition the array a[] into two halves around a pivot element.
+2.	Initialize variables i = low, j = high, and p = a[low] (pivot).
+3.	Use a do-while loop:
+•	Increment I until a[i] greater than or equal to p.
+•	Decrement j until a[j] is less than or equal to p.
+•	If I is less than j, swap a[i] and a[j].
+4.	Swap a[low] with a[j] to place the pivot in its correct sorted position.
+5.	Return the index j, which represents the partition point.
+Quick Sort
+1.	Define a function QS(a, low, high) to recursively sort the array a[] using the Quick Sort algorithm.
+2.	If low is less than high:
+•	Call Partition(a, low, high) to get the partition index j.
+•	Recursively call QS for the left subarray: QS(a, low, j - 1).
+•	Recursively call QS for the right subarray: QS(a, j + 1, high).
+Average
+1.	Define a function average() to perform some operation, such as writing data to a file, based on the average-case scenario for Quick Sort.
+2.	Iterate from 1 to 10000 in steps of 1000:
+•	Calculate t as i * log(i).
+•	Write the pair (i, t) to a file using WriteToFile(i, t) function.
+Worst Case
+1.	Define a function worst() to perform some operation, such as writing data to a file, based on the worst-case scenario for Quick Sort.
+2.	Iterate from 1 to 10000 in steps of 1000:
+•	Calculate t as (i * i) / 100.
+•	Write the pair (i, t) to a file using WriteFile(i, t) function.
+
+Time Complexity:
+For quick sort:
+1.	Best-case time complexity: O(nlogn)
+2.	Average-case time complexity: O(nlogn)
+3.	Worst-case time complexity: O(n2). 
+Quick Sort is known for its efficiency and is widely used in practice due to its average-case time complexity of O(nlogn).
+
+Graph:
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+                                           PRACTICAL 3
+Aim: To find time complexity of Maximum and minimum through iteration and merge sort and to compare it through graph.
+Description:
+This C++ code implements functions to find the maximum and minimum elements in an array using both recursive and iterative approaches. It measures the average time taken to find the maximum and minimum elements for array sizes ranging from 100 to 900 elements, repeating the process 10 times for each array size, and records the timing data in "data.txt" and "data2.txt" for analysis and comparison between the recursive and iterative methods.
+Algorithm:
+MaxMinIterative
+1.	Define a function MaxMinIterative(a, low, high) to find the maximum and minimum elements in an array a[] iteratively.
+2.	Initialize two nested loops to iterate through the array:
+•	Outer loop from low to high.
+•	Inner loop from i+1 to high.
+3.	Compare each element a[i] with elements a[j] where j is greater than i.
+4.	If a[i] is greater than a[j] , swap them to ensure that a[i] holds the minimum element among the elements from i to high.
+5.	After iterating through the array, print the maximum element at index high and the minimum element at index low.
+MaxMin
+1.	Define a function MaxMin(a, low, high) to find the maximum and minimum elements in an array a[] recursively.
+2.	Declare variables max, min, mid, max1, and min1.
+3.	Check if low is equal to high, which indicates a single element in the array:
+•	If true, set max and min to a[low] since it is both the maximum and minimum element.
+4.	Otherwise, calculate the middle index mid as (low + high) / 2.
+5.	Recursively call MaxMin for the left half of the array: MaxMin(a,low,mid).
+6.	Check if low is equal to high again, now for the right half of the array:
+•	If true, set max1 and min1 to a[low] since it is both the maximum and minimum element in this half.
+7.	Recursively call MaxMin for the right half of the array: MaxMin(a,mid + 1, high). 
+8.	Compare max with max1 and update max if max1 is greater.
+9.	Compare min with min1 and update min if min1 is smaller.
+10.	Print the maximum and minimum elements after the recursion completes.
+
+Time Complexity:
+Max and Min Iterative:
+1.	Best-case time complexity: O(n)
+2.	Average-case time complexity: O(n)
+3.	Worst-case time complexity: O(n)
+The iterative approach to find the maximum and minimum elements in an array has a linear time complexity, making it efficient for arrays of any size and arrangement.
+
+Max and Min through Merge sort:
+1.	Best-case time complexity: O(nlogn)
+2.	Average-case time complexity: O(nlogn)
+3.	Worst-case time complexity: O(nlogn)
+Merge Sort's time complexity for finding the maximum and minimum elements is efficient across different scenarios, making it a reliable algorithm for sorting and related tasks.
+
+Graph:
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                           PRACTICAL 4
+Aim: To find time complexity of Matrix Multiplication through divide and conquer and to represent it through graph.
+Description:
+This C++ code implements matrix multiplication using the Strassen's algorithm and measures the average time taken for matrix multiplication of randomly generated square matrices of increasing sizes (from 2x2 to 256x256). It records the timing data in "data.txt" for analysis and includes a function (`complexity()`) to calculate and write the time complexity data based on ( n^3 ) for comparison.
+Algorithm:
+add_matrices Function:
+1.	Parameters: Two matrices A and B.
+2.	Returns: The sum of matrices A and B.
+combine_matrices Function:
+1.	Parameters: Four matrices C11, C12, C21, and C22.
+2.	Returns: A combined matrix formed by arranging C11, C12, C21, and C22 in a block matrix form.
+matrix_multiply Function:
+1.	Parameters: Two matrices A and B.
+2.	Returns: The product of matrices A and B using Strassen's algorithm.
+3.	Steps:
+•	If A is a 1x1 matrix, directly compute and return the product.
+•	Otherwise, divide matrices A and B into submatrices A11, A12, A21, A22, B11, B12, B21, and B22.
+•	Compute seven intermediate matrices P1 to P8 using recursive calls to matrix_multiply for submatrix products.
+•	Compute four submatrices C11, C12, C21, and C22 using add_matrices and combine_matrices.
+•	Return the combined matrix.
+initialize_random_matrix Function:
+1.	Parameters: A matrix c and its size.
+2.	Action: Initializes the matrix c with random values.
+complexity Function:
+1.	Action: Calculates and writes to a file the size of matrices (i), which increases exponentially, and their corresponding complexity (n = i^3).
+
+
+Time Complexity:
+For Matrix Multiplication :
+1.	Best-case time complexity: O(n^3)
+2.	Average-case time complexity: O(n^3)
+3.	Worst-case time complexity: O(n^3)
+For small matrices, it is a better approach.
+Graph:
+ 
+
+
+                                           PRACTICAL 5
+Aim: To find time complexity of Strassens Multiplication and to represent it through graph.
+Description:
+This C++ code implements matrix multiplication using the Strassen's algorithm, which is a divide-and-conquer approach to efficiently multiply matrices. It measures the average time taken for matrix multiplication of randomly generated square matrices of increasing sizes (from 2x2 to 256x256) and records the timing data in "data.txt" for analysis. Additionally, it includes a function (`complexity()`) to calculate and write the time complexity data based on ( n^2.81 ) for comparison.
+Algorithm:
+Divide the Matrices:
+1.	Given two matrices A and B, divide them into four equal-size submatrices each:
+•	A11, A12, A21, A22 for matrix A.
+•	B11, B12, B21, B22 for matrix B.
+Compute Intermediate Matrices:
+1.  Calculate intermediate matrices X1 to X5 and Y1 to Y5 using additions and subtractions of submatrices as follows:
+•	X1 = (A11 + A22)
+•	X2 = (A21 + A22)
+•	X3 = (A11 + A12)
+•	X4 = (A21 - A11)
+•	X5 = (A12 - A22)
+
+•	Y1 = (B11 + B22)
+•	Y2 = (B12 - B22)
+•	Y3 = (B21 - B11)
+•	Y4 = (B11 + B12)
+•	Y5 = (B21 + B22)
+Recursive Multiplications:
+1.  Perform seven recursive multiplications (P, Q, R, S, T, U, V) using the intermediate matrices:
+•	P = A11 * (B12 - B22)
+•	Q = (A11 + A12) * B22
+•	R = A11 * (B21 - B11)
+•	S = A22 * (B11 + B12)
+•	T = (A21 + A22) * B11
+•	U = (A12 - A22) * (B21 + B22)
+•	V = (A21 - A11) * (B11 + B12)
+Compute Result Submatrices:
+1.  Compute the result submatrices Z1 to Z4 using additions and subtractions of the recursive multiplications:
+•	Z1 = P + S
+•	Z2 = Z1 + V
+•	Z3 = P + R
+•	Z4 = Z3 + U
+Combine Result Matrices:
+1.  Combine the result submatrices to obtain the final result matrix C:
+•	C11 = Z2 – T
+•	C12 = R + T
+•	C21 = Q + S
+•	C22 = Z4 - Q
+
+
+Time Complexity:
+For Strassen Matrix:
+1.	Best-case time complexity: O(n^2.81)
+2.	Average-case time complexity: O(n^2.81)
+3.	Worst-case time complexity: O(n^2.81)
+The Strassen algorithm is generally more efficient than the naive approach for large matrices due to its reduced number of scalar multiplications, even though it has a higher exponent in its time complexity. However, for small matrices, the overhead of the Strassen algorithm may not provide a significant advantage over the naive approach.
+Graph:
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                              LAB 4
+                                           PRACTICAL 1
+Aim: To find time complexity of Activity Selector and to represent it through graph.
+Description:
+This C++ code implements a scheduling algorithm using the Activity Selection (AS) algorithm. It generates random start times, finish times, and profits for activities, sorts them based on start and finish times, and then applies the AS algorithm to select a non-overlapping set of activities that maximize profit. The code measures the average time taken for this process across multiple iterations and records the results in a file.
+Algorithm:
+Sorting (Start) Function
+1.	Define a function Sort_start(int s[],int n) for sorting the start array of every instance.
+2.	Initialize array s[] to n size.
+3.	Start outer loop from i = 0 to n-1.
+•	Start inner loop from j=0 to n-i-1.
+•	Compare s[j] with s[j+1].
+	If s[j] > s[j+1], swap s[j] and s[j+1].
+•	End Inner loop.
+End Outer loop.
+4.	Output: Sorted array s[] in ascending order.
+
+Sorting (Finish) Functions
+1.	Define a function Sort_finish(int f[],int n) for sorting the start array of every instance.
+2.	Initialize array f[] to n size.
+3.	Start outer loop from i = 0 to n-1.
+•	Start inner loop from j=0 to n-i-1.
+•	Compare f[j] with f[j+1].
+	If f[j] > f[j+1], swap f[j] and f[j+1].
+•	End Inner loop.
+End Outer loop.
+4.	Output: Sorted array f[] in ascending order.
+
+Activity Selector
+1.	Define a function AS(int a[], int s[], int f[], int n) for Activity Selector.
+2.	Create a new array sol[] of size n to store the selected activities.
+3.	Initialize i=0 and j=0.
+4.	Set sol[0] = 0.
+5.	Start a loop from j=1 to n-1.
+•	Set sol[i]=0 (Initialize all other elements of sol[] to 0).
+6.	Set sol[i] = a[i].
+7.	Start another loop from j=1 to n-1.
+•	Check if the start time of activity j (s[j]) is greater than or equal to the finish time of the last selected activity (f[i]).
+•	If true, set sol[j] = a[j] (select activity j) and update i=j.
+8.	End loops.
+
+Time Complexity:
+For activity selector:
+1.	Best-case time complexity: O(n)
+2.	Average-case time complexity: O(nlogn)
+3.	Worst-case time complexity: O(nlogn)
+The Activity Selection problem exhibits efficient time complexities, especially in the average and worst cases, due to the effectiveness of the greedy algorithm combined with sorting. However, the best-case time complexity is even better when the activities are already sorted.
+
+Graph:
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+                                          PRACTICAL 2
+Aim: To find time complexity of Iterative QuickSort and to represent it through graph.
+Description:
+This C++ code implements an iterative version of the QuickSort algorithm using a stack for partitioning and sorting an array of integers. It generates random integer arrays of increasing sizes, applies QuickSort iteratively for 10 iterations on each array, measures the average time taken, and records the results in a file for analysis.
+Algorithm:
+Swap 
+1.	Define a function Swap(a,b) for Swapping.
+2.	Set temp to the value of a.
+3.	Set a to the value of b.
+4.	Set b to the value of temp.
+Partition
+1.	Define a function Partition(a, low, high) for partition in Quick Sort.
+2.	Set i to low.
+3.	Set j to high.
+4.	Set p to a[low] (pivot element).
+5.	Do the following until I is less than or equal to j:
+•	Increment i until a[i] is greater than or equal to p.
+•	Decrement j until a[j] is less than or equal to p.
+•	If I is less than j, swap a[i] and a[j].
+6.	Swap a[low] and a[j] (place pivot in correct position).
+7.	Return j.(index of pivot element).
+Quick Sort Iterative
+1.	Define a function QuickSortIterative(a, low, high) for Iterative Quick Sort.
+2.	Create an empty stack.
+3.	Push low onto the stack.
+4.	Push high onto the stack.
+5.	While the stack is not empty, do the following:
+•	Pop high from the stack.
+•	Pop low from the stack.
+•	Call Partition(a, low, high) and store the result in pivotIndex.
+•	If pivotIndex – 1 is greater than low, push low and pivotIndex -1 onto the stack.
+•	If pivotIndex + 1 is less than high, push pivotIndex + 1and high onto the stack.
+
+Time Complexity:
+For Iterative Quicksort:
+1.	Best-case time complexity: O(nlogn)
+2.	Average-case time complexity: O(nlogn)
+3.	Worst-case time complexity: O(n2)
+Efficient pivot selection strategies, such as choosing a random pivot or using the "median-of-three" approach, can help mitigate the risk of worst-case behavior and improve the average-case performance of Quick Sort.
+
+Graph:
+ 
+                                           PRACTICAL 3
+Aim: To find time complexity of KnapSack and to represent it through graph.
+Description:
+This C++ program implements a knapsack algorithm with three different strategies: sorting by profit, sorting by weight, and sorting by profit-to-weight ratio. It generates random profit and weight values for items, sorts them based on the selected strategy, and calculates the average time taken to solve the knapsack problem for each strategy over multiple iterations. The results are then written to separate files for analysis.
+Algorithm:
+Sort_profits
+1.	Define a function sort_profit(p, w, n) for sorting according to profit in descending order.
+2.	Loop i from 0 to n-1
+•	Loop j from 0 to n-i-1:
+o	If p[j] < p[j+1], do the following:
+	Swap p[j] and p[j+1].
+	Swap w[j] and w[j+1].
+Sort_weight
+1.	Define a function sort_weight(p, w, n) for sorting according to weight ascending .
+2.	Loop i from 0 to n-1
+3.	Loop j from 0 to n-1
+o	If w[j] > w[j+1], do the following:
+	Swap p[j] and p[j+1].
+	Swap w[j] and w[j+1].
+Sort_profit_weight
+1.	Define a function sort_profit_weight(p, w, n) for sorting according to profit weight ratio in descending .
+2.	Loop i from 0 to n-1
+•	Loop from 0 to n-i-1
+o	Calculate ratio_i = p[i] /w[i] and ratio_j = p[j]/w[j].
+o	If ratio_i is greater than ratio_j, do the following:
+	Swap p[i] and p[j].
+	Swap w[i] and w[j].
+Knapsack
+1.	Define a function Knapsack(n, max, p, w).
+2.	Set max_profit to max.
+3.	Create an array Sol of size n and initialize all elements to 0.
+4.	Loop i from 0 to n-1
+•	Set Sol[i] to 0.
+5.	Loop i from 0 to n-1
+•	If w[i] is less than max_profit, do the following:
+o	Set Sol[i] to 1.
+o	Reduce max_profit by w[i].
+•	Else, break out of the loop.
+6.	If I is less than n, set  Sol[i] to max_profit divided by w[i]. 
+
+Time Complexity:
+For Knapsack:
+1.	Best-case time complexity: O(1)
+2.	Average-case time complexity: O(nW)
+3.	Worst-case time complexity: O(nW)
+Where n is the number of items and W is the capacity of the knapsack. This time complexity is efficient and practical for moderate-sized instances of the problem, but it can become prohibitive for very large n or W due to the polynomial nature of the complexity.
+Graph:
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                              LAB 5
+                                           PRACTICAL 1
+Aim: To find time complexity of Shortest Distance (Dijkstra) and to represent it through graph.
+Description:
+This C++ program implements the Single-Source Shortest Path (SSSP) algorithm using Dijkstra's approach. It generates random cost values for edges in a graph and calculates the shortest paths from a source vertex to all other vertices. The average time taken to perform the SSSP algorithm over multiple iterations for varying graph sizes is computed and written to a file for analysis.
+Algorithm:
+Shortest Distance (Dijkstra)
+1.	Define a function sssp(n, cost, v, dist) for finding the shortest distance from each point.
+2.	Loop i from 1 to n
+•	Set cost[v,i] to dist[i].
+•	Set s[i] to False. (To add the vertex in non visited list).
+3.	S[v] = T (To add the vertex in visited list).
+4.	Dist [v] = 0
+5.	Loop  j from 2 to n-1
+•	Choose a vertex u such that s[u] is in non visited list and dist[u] is minimum.
+•	Move s[u] in visited list.
+•	Loop w from 0 to n
+o	If all w are neighbours of u and dist[w] is greater than sum of dist[u] and cost[u][w]
+•	Set dist[w] to sum of dist[u] and cost[u][w]
+6.	Return dist().
+
+Time Complexity:
+For Shortest Distance (Dijkstra):
+1.	Best-case time complexity: O(n)
+2.	Average-case time complexity: O(n2)
+3.	Worst-case time complexity: O(n2)
+The time complexity analysis helps understand how the algorithm's performance varies based on the characteristics of the input graph. Efficient implementations of shortest path algorithms often aim to achieve better-than-average-case performance, especially for large or dense graphs.
+
+Graph:
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                           PRACTICAL 2
+Aim: To find time complexity of Prims Algorithm and to represent it through graph.
+Description:
+This C++ program implements Prim's algorithm for finding the Minimum Spanning Tree (MST) of a graph. It generates random cost values for edges in the graph, applies Prim's algorithm multiple times to calculate the average time taken for varying graph sizes, and writes the results to a file for analysis.
+Algorithm:
+Prims
+1.	Define a function prims(cost,n,t) for finding the shortest distance from each vertex.
+2.	Let (k,l) be the edge with minimum weight.
+3.	Set minimum to cost[k,l].
+4.	Loop i from 1 to n
+•	If cost[i,k] is less than cost[i,l]
+o	Set near[i] = k
+•	Else 
+o	Set near[i] = l
+5.	Set near[k] and near[l] to 0.
+6.	Loop j from 1 to n-1
+•	Loop i from 0 to n
+o	If near[i] is not equals to zero and cost[i][near[i]] is less than mincost
+	Set u to i
+	Set mincost to cost[i][near[i]].
+•	Set t[j][0] to 0
+•	Set t[j][1] to near[u]
+•	Set near[u] to 0
+•	Loop k from 0 to n
+o	If near[k] is not equals to zero and cost[k][near[k]] is greater than cost[u][k]
+	Set near[k] to u.
+
+
+Time Complexity:
+For Prims algorithm:
+1.	Best-case time complexity: O(V)
+2.	Average-case time complexity: O(ElogV) or O(V2) (depending on implementation and data structures)
+3.	Worst-case time complexity: O(V2) or O(ElogV) (depending on implementation and data structures)
+Efficient implementations of Prim's algorithm aim to achieve better-than-average-case performance, especially for dense graphs where the worst-case time complexity can be significant. Using appropriate data structures like priority queues can significantly improve the algorithm's performance.
+
+Graph:
+
+ 
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+                                         PRACTICAL 3
+Aim: To find time complexity of Kruskal Algorithm and to represent it through graph.
+Description:
+This C++ program implements Kruskal's algorithm to find the Minimum Spanning Tree (MST) of a graph. It generates random edges with weights, applies Kruskal's algorithm multiple times for different graph sizes, calculates the average time taken, and writes the results to a file for analysis. The program uses a union-find data structure and a min-heap to efficiently process edges and construct the MST.
+Algorithm:
+Find Function
+1.	Define a function find(p,i) for finding next vertex.
+2.	Recursively find the parent until reaching a vertex whose parent is itself (indicating the root of the set).
+3.	Output: The parent of the set containing vertex i.
+Union Function
+1.	Define a function unionSets (p,x,y) for union of vertexes.
+2.	Find the parents of x and y, and set the parent of one as the other to merge the sets.
+Heapify Function
+1.	Define a function heapify (edges,i,n) for heapify of heap.
+2.	Initialize left as ‘2i + 1’, right as ‘2i + 2’and smallest as ‘i’.
+3.	If left is less than n and edges[left] is less than edges[smallest].
+•	Set smallest to left.
+4.	If right is less than n and edges[right] is less than edges[smallest].
+•	Set smallest to right.
+5.	If smallest is not equals to i
+•	Swap(edges[i], edges[smallest])
+•	Heapify(edges,smallest,n)
+Build Heap Function
+1.	Define a function buildheap(edges, n) for building a heap.
+2.	Loop i from n/2 -1 to 0
+•	Heapify(edges, i, n)
+Kruskal’s Algorithm Function 
+1.	Define a function Kruskal(edges, n, numVertices, result) for finding minimum cost.
+2.	Build a min-heap using buildHeap.
+3.	Loop i from 0 to numVertices 
+4.	Initialize edgeCount to 0.
+5.	Start While loop till edgeCount is less than numVertices -1 and n is greater than 0
+•	Loop i from 0 to 3
+o	Set edge[i] to edges[0][i]
+o	swap(edges[0], edges[n-1])
+•	Swap(edges[0], edges[n-1])
+•	Decrement n by 1.
+•	Heapify(edges, 0, n)
+•	Initialize srcp to find(p,edges[0])
+•	Initialize destp to find(p,edges[1])
+•	If srcp is not equal to destp
+o	Loop i from 0 to 3
+	Set result[edgeCount][i] to edge[i].
+•	Increment edgeCount by 1
+•	unionSets(p,srcp,destp)
+ 
+Time Complexity:
+For Kruskals Algoritm:
+1.	Best-case time complexity: O(ElogE)
+2.	Average-case time complexity: O(ElogE) or O(ElogV) (depending on implementation and data structures)
+3.	Worst-case time complexity: O(ElogE) or O(ElogV) (depending on implementation and data structures)
+Efficient implementations of Kruskal's algorithm use a sorted edge list or a priority queue to process edges efficiently, leading to better-than-average-case performance in practice. Additionally, using optimized disjoint-set data structures can further improve the algorithm's time complexity.
+
+Graph:
+ 
+
+
