@@ -1,4 +1,4 @@
-![image](https://github.com/Diksha0416/ADA_LAB-UE223026-/assets/134716037/2eb0cee9-b912-4731-9a18-92ac9cf059b8)# ADA_LAB-UE223026-
+# ADA_LAB-UE223026-
                                                                               LAB 1
                                                   PRACTICAL 1
 Aim: To find time complexity of Selection Sort to represent it through graph.
@@ -21,7 +21,8 @@ The time complexities of Selection Sort are as follows:
 Here, n represents the number of elements in the array or list being sorted.
 
 Graph:
- 
+ ![image](https://github.com/Diksha0416/ADA_LAB-UE223026-/assets/134716037/7993df02-033d-423c-b2d6-1786d78b9309)
+
 
 
 
@@ -60,7 +61,8 @@ The time complexities for the Tower of Hanoi algorithm are typically described i
 In all cases, the number of moves required grows exponentially with the number of disks (n) in the Tower of Hanoi problem.
 
 Graph:
- 
+ ![image](https://github.com/Diksha0416/ADA_LAB-UE223026-/assets/134716037/cf8ca9ab-3357-4a77-8182-c48640ad6f38)
+
 
 
 
@@ -92,6 +94,7 @@ For Horner's method of polynomial evaluation:
 3.	Worst-case time complexity: O(n)
  where n is the degree of the polynomial being evaluated.
 Graph:
+![image](https://github.com/Diksha0416/ADA_LAB-UE223026-/assets/134716037/8af056f0-2236-4b1e-9c02-03509f970dd3)
  
 
 
@@ -129,7 +132,8 @@ The time complexity for generating a truth table (T/F table) depends on the numb
 Here, n represents the number of variables in the boolean expression. The reason for the exponential time complexity is that a truth table for a boolean expression with n variables has 2^n rows, each representing a unique combination of truth values for the variables. Generating all these combinations requires exponential time as the number of variables increases.
 
 Graph:
- 
+ ![image](https://github.com/Diksha0416/ADA_LAB-UE223026-/assets/134716037/8ffcf147-1a50-4843-abdc-3f3a7b7f458b)
+
 
 
 
@@ -164,7 +168,8 @@ For sum of n numbers:
 These complexities represent the time required to compute the sum of n numbers using recursion under different scenarios.
 
 Graph:
- 
+ ![image](https://github.com/Diksha0416/ADA_LAB-UE223026-/assets/134716037/6e72d0fb-d8df-41ed-a4f5-6befc3e018d0)
+
 
 
 
@@ -204,7 +209,8 @@ For Binary search time complexities:
 These complexities demonstrate the efficiency of binary search, particularly in sorted lists, where it can quickly find elements with a logarithmic time complexity.
 
 Graph:
- 
+ ![image](https://github.com/Diksha0416/ADA_LAB-UE223026-/assets/134716037/7a4ba74f-016a-48ea-b352-4edc375e6619)
+
 
 
 
@@ -234,7 +240,8 @@ For Power function time complexities:
 These complexities demonstrate that the exponentiation by squaring algorithm is efficient, especially for large exponents, as it reduces the number of multiplications required compared to a naive approach.
 
 Graph:
- 
+ ![image](https://github.com/Diksha0416/ADA_LAB-UE223026-/assets/134716037/b5d1041b-257d-47cf-8f94-22764900e9c2)
+
 
 
 
@@ -277,7 +284,8 @@ For combining 2 sorted lists:
 This analysis demonstrates that the time complexity for combining two sorted lists using the merge approach is linear in the combined size of the lists (m+n).
 
 Graph:
- 
+ ![image](https://github.com/Diksha0416/ADA_LAB-UE223026-/assets/134716037/c37247a0-7b8d-4513-a90e-2a2e625a404e)
+
 
 
 
@@ -321,6 +329,7 @@ For finding actual position:
 These complexities describe the behavior of the actual_pst function in different scenarios based on the input array's arrangement around the pivot element el.
 
 Graph:
+![image](https://github.com/Diksha0416/ADA_LAB-UE223026-/assets/134716037/77e2c302-ce0e-49c1-a5d3-a3bd14b95a27)
  
 
 
@@ -360,7 +369,8 @@ For merge sort :
 Merge Sort's consistent time complexity across different scenarios makes it a popular choice for sorting large datasets efficiently.
 
 Graph:
- 
+ ![image](https://github.com/Diksha0416/ADA_LAB-UE223026-/assets/134716037/c340e61e-2093-40e2-ad34-1ed0c313cc83)
+
 
 
 
@@ -404,6 +414,7 @@ For quick sort:
 Quick Sort is known for its efficiency and is widely used in practice due to its average-case time complexity of O(nlogn).
 
 Graph:
+![image](https://github.com/Diksha0416/ADA_LAB-UE223026-/assets/134716037/92a28607-5b8e-4eef-8e40-b014870cef37)
 
 
  
@@ -460,7 +471,8 @@ Max and Min through Merge sort:
 Merge Sort's time complexity for finding the maximum and minimum elements is efficient across different scenarios, making it a reliable algorithm for sorting and related tasks.
 
 Graph:
- 
+ ![image](https://github.com/Diksha0416/ADA_LAB-UE223026-/assets/134716037/8b440c44-c63e-4dd9-ac9f-f142767ade78)
+
 
 
 
@@ -509,6 +521,7 @@ For Matrix Multiplication :
 3.	Worst-case time complexity: O(n^3)
 For small matrices, it is a better approach.
 Graph:
+![image](https://github.com/Diksha0416/ADA_LAB-UE223026-/assets/134716037/b9d5a93b-5540-456a-8fee-5001d86010e2)
  
 
 
@@ -564,7 +577,8 @@ For Strassen Matrix:
 3.	Worst-case time complexity: O(n^2.81)
 The Strassen algorithm is generally more efficient than the naive approach for large matrices due to its reduced number of scalar multiplications, even though it has a higher exponent in its time complexity. However, for small matrices, the overhead of the Strassen algorithm may not provide a significant advantage over the naive approach.
 Graph:
- 
+ ![image](https://github.com/Diksha0416/ADA_LAB-UE223026-/assets/134716037/187d2230-55de-4cb4-ab8e-12e60dc0f7a0)
+
 
 
 
@@ -628,7 +642,8 @@ For activity selector:
 The Activity Selection problem exhibits efficient time complexities, especially in the average and worst cases, due to the effectiveness of the greedy algorithm combined with sorting. However, the best-case time complexity is even better when the activities are already sorted.
 
 Graph:
- 
+ ![image](https://github.com/Diksha0416/ADA_LAB-UE223026-/assets/134716037/4e37e52e-c0ea-4428-888a-40be91d5a709)
+
 
  
 
@@ -683,6 +698,7 @@ For Iterative Quicksort:
 Efficient pivot selection strategies, such as choosing a random pivot or using the "median-of-three" approach, can help mitigate the risk of worst-case behavior and improve the average-case performance of Quick Sort.
 
 Graph:
+![image](https://github.com/Diksha0416/ADA_LAB-UE223026-/assets/134716037/d2bc19f0-58ec-4dfc-b128-4c03bb12ecdf)
  
                                            PRACTICAL 3
 Aim: To find time complexity of KnapSack and to represent it through graph.
@@ -731,7 +747,8 @@ For Knapsack:
 3.	Worst-case time complexity: O(nW)
 Where n is the number of items and W is the capacity of the knapsack. This time complexity is efficient and practical for moderate-sized instances of the problem, but it can become prohibitive for very large n or W due to the polynomial nature of the complexity.
 Graph:
- 
+ ![image](https://github.com/Diksha0416/ADA_LAB-UE223026-/assets/134716037/04c80a22-b8c1-48a4-9366-ffd008312d65)
+
 
 
 
@@ -777,7 +794,8 @@ For Shortest Distance (Dijkstra):
 The time complexity analysis helps understand how the algorithm's performance varies based on the characteristics of the input graph. Efficient implementations of shortest path algorithms often aim to achieve better-than-average-case performance, especially for large or dense graphs.
 
 Graph:
- 
+ ![image](https://github.com/Diksha0416/ADA_LAB-UE223026-/assets/134716037/0a6ec8b4-85ed-43e8-a86f-62146d7c1419)
+
 
 
 
@@ -828,6 +846,7 @@ For Prims algorithm:
 Efficient implementations of Prim's algorithm aim to achieve better-than-average-case performance, especially for dense graphs where the worst-case time complexity can be significant. Using appropriate data structures like priority queues can significantly improve the algorithm's performance.
 
 Graph:
+![image](https://github.com/Diksha0416/ADA_LAB-UE223026-/assets/134716037/0a407432-9804-42c4-a2fc-5b11ff18cee4)
 
  
 
@@ -898,6 +917,7 @@ For Kruskals Algoritm:
 Efficient implementations of Kruskal's algorithm use a sorted edge list or a priority queue to process edges efficiently, leading to better-than-average-case performance in practice. Additionally, using optimized disjoint-set data structures can further improve the algorithm's time complexity.
 
 Graph:
- 
+ ![image](https://github.com/Diksha0416/ADA_LAB-UE223026-/assets/134716037/2e469dda-1f60-4d58-be7f-b7c6308dd87d)
+
 
 
