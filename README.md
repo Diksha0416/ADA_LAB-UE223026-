@@ -971,16 +971,19 @@ Description:
 A multistage graph is a directed graph where the nodes are divided into multiple stages, and edges only connect nodes from one stage to the next. It's often used to model problems involving a sequence of decisions or actions, such as production processes or project planning, where each stage represents a distinct phase or step. Algorithms like Dijkstra's or dynamic programming are commonly used to solve optimization problems on multistage graphs.
 
 Algorithm:
-Stage Function (stage):
+1. Stage Function (stage):
 •	This function recursively calculates the number of stages in the DAG starting from a given node i. It increments the count parameter for each recursive call until it reaches the last node (n - 1), where it returns the count.
-Find Function (find_fun):
+
+2. Find Function (find_fun):
 •	This function is used to find the minimum cost edge from node j to other nodes in the graph. It iterates over the edges starting from j + 1 and calculates the minimum cost using the fcost array.
-FCost Function (fcost):
+
+3. FCost Function (fcost):
 •	This function calculates the minimum cost and the path for a given number of stages (k) in the DAG.
 •	It initializes arrays d and fcost to store intermediate results.
 •	It starts from the second-to-last node (n - 2) and uses the find_fun function to compute the minimum cost for each node.
 •	It then constructs the path (p) based on the minimum cost values.
-Main Function:
+
+4. Main Function:
 •	In the main function, a sample DAG represented by an adjacency matrix (graph) is defined.
 •	It calculates the number of stages in the DAG using the stage function and prints it.
 •	It then calls the fcost function to find the minimum cost and path for a specified number of stages (k).
@@ -999,17 +1002,20 @@ Aim: All pair shortest path.
 Description:
 The All-Pairs Shortest Path (APSP) algorithm calculates the shortest path between all pairs of vertices in a weighted graph. It's commonly solved using algorithms like Floyd-Warshall or Johnson's algorithm. Floyd-Warshall has a time complexity of O(V^3) where V is the number of vertices, making it suitable for dense graphs and small to medium-sized graphs. Johnson's algorithm is more efficient for sparse graphs with a time complexity of O(V^2 log V + VE), where E is the number of edges, but it requires non-negative edge weights.
 
-Algorithm:
-Initialization:
+Algorithm
+:
+1. Initialization:
 •	Initialize an adjacency matrix graph representing the weighted edges between vertices. Use a large value (INF) to represent infinity or absence of an edge.
 •	Initialize matrices dist and pred of size VxV to store the shortest distances and predecessor vertices for each pair of vertices.
 •	Initialize dist[i][j] with the weight of the edge between vertex i and j, and set pred[i][j] = i if there is an edge, otherwise set pred[i][j] = -1.
-Floyd-Warshall Algorithm:
+
+2. Floyd-Warshall Algorithm:
 •	Iterate through all vertices (k) and for each pair of vertices (i, j):
 •	If there exists a shorter path from vertex i to j through vertex k, update dist[i][j] and pred[i][j].
 •	Update dist[i][j] to dist[i][k] + dist[k][j] if it's smaller than the current value.
 •	Update pred[i][j] to the predecessor vertex on the shortest path.
-Printing Shortest Paths:
+
+4. Printing Shortest Paths:
 •	After running the algorithm, iterate through all pairs of vertices (i, j) and print the shortest distance from i to j and the corresponding path using the printPath function.
 
 Time Complexity: 
@@ -1087,8 +1093,10 @@ Description:
 The Knapsack problem using dynamic programming (DP) optimally selects items to maximize value within a weight limit. It fills a matrix based on item weights and values, computing optimal values for different weight capacities. The algorithm then backtracks to determine which items were selected. Its time complexity is O(n*W), where n is the number of items and W is the knapsack capacity.
 
 Algorithm:
+
 Initialization:
 •	Create a 2D vector K of size (n+1) * (W+1) to store the maximum values for different weights and items.
+
 Dynamic Programming Loop:
 •	Iterate through all items and weights using nested loops.
 •	If the weight of the current item is less than or equal to the current weight limit, update K[i][w] to the maximum value between adding the current item's value to the maximum value obtained so far with the remaining weight (K[i-1][w - wt[i-1]]) and not adding the current item (K[i-1][w]).
