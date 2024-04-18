@@ -2,8 +2,10 @@
                                                                               LAB 1
                                                   PRACTICAL 1
 Aim: To find time complexity of Selection Sort to represent it through graph.
+
 Description: 
 This C++ code measures the average time taken to sort randomly generated arrays using the selection sort algorithm and writes this data to a file named "data.txt". It utilizes functions for file writing, selection sorting, and timing measurements to analyze sorting performance for different array sizes.
+
 Algorithm:
 Selection Sort
 •	Start with the first element as the minimum.
@@ -41,8 +43,10 @@ Graph:
 
                                           PRACTICAL 2
 Aim: To find time complexity of Tower of Hanoi and to represent it through graph.
+
 Description: 
 This C++ code implements the Tower of Hanoi problem using recursion. It defines a function th() to solve the Tower of Hanoi problem for a given number of disks (n) and outputs the moves to transfer disks from the source peg to the destination peg. The Algo() function measures the average time taken to solve the Tower of Hanoi problem for different numbers of disks (from 1 to 9) and writes this data to a file named "data.txt" in CSV format. The main() function calls Algo() to perform these operations.
+
 Algorithm:
 Tower of Hanoi 
 a.	Define a function th(n, source, destination, spare) to move n disks from the source peg to the destination peg using the spare peg as an auxiliary.
@@ -77,8 +81,10 @@ Graph:
 
                                            PRACTICAL 3
 Aim: To find time complexity of Horner and to represent it through graph.
+
 Description:
 This C++ code implements Horner's method for polynomial evaluation and measures the average time taken to evaluate polynomials of increasing degrees (from 1 to 1000 in steps of 10), storing the results in a file named "data.txt" and displaying them on the console.
+
 Algorithm:
 Horner
 1.	Define a function Horner(a, n, m, x) to evaluate a polynomial using Horner's method, where a[] is the array of coefficients, n is the current index, m is the highest degree of the polynomial, and x is the value at which to evaluate the polynomial.
@@ -113,8 +119,10 @@ Graph:
 
                                            PRACTICAL 4
 Aim: To find time complexity of Truth Table function generator and to represent it through graph.
+
 Description:
 This C++ code generates and prints all possible combinations of "T" and "F" for a given length (up to 10), measuring the average time taken to generate these combinations and storing the results in a file named "data.txt."
+
 Algorithm:
 Boolean
 1.	Define a function TT(x, k, n) to generate all possible truth table combinations for a Truth Table expression with n variables, where x[] is the array to store the current combination, k is the current index, and n is the total number of variables.
@@ -149,8 +157,10 @@ Graph:
 
                                            PRACTICAL 5
 Aim: To find time complexity of Sum of n numbers and to represent it through graph.
+
 Description:
 This C++ code measures the average time taken to compute the sum of elements in an array using recursion, for array sizes ranging from 13,000 to 99,000 in steps of 10,000. It generates random arrays, performs the sum calculation 10 times for each array size, and records the timing data in a file named "data.txt" while displaying the results on the console.
+
 Algorithm:
 Sum of n numbers
 1.	Define a function sum(a, k) to calculate the sum of elements in an array up to index k, where a[] is the array of integers and k is the index.
@@ -189,8 +199,10 @@ Graph:
                                                                               LAB 2
                                            PRACTICAL 1
 Aim: To find time complexity of Binary Search and to represent it through graph.
+
 Description:
 This C++ code implements binary search on a sorted array of integers, measuring the average time taken to find a specified element in arrays of increasing sizes (from 10 to 990 elements in steps of 100). It generates random arrays, sorts them, performs binary search 10 times for each array size, displays the search results, and records the timing data in a file named "data.txt."
+
 Algorithm:
 Binary Search
 1.	Define a function binary_search(a, low, high, el) to perform binary search on a sorted array a[] for the element el within the range [low, high].
@@ -218,8 +230,10 @@ Graph:
 
                                            PRACTICAL 2
 Aim: To find time complexity of Power and to represent it through graph.
+
 Description :
 This C++ code calculates the power of a number using an optimized approach based on exponentiation by squaring. It measures the average time taken to compute the square of numbers from 1 to 199 in steps of 10, repeating the computation 10 times for each number and recording the timing data in a file named "data.txt" while displaying the results on the console.
+
 Algorithm:
 Power
 1.	Define a function power(n, x) to calculate x^n, where n is the exponent and x is the base.
@@ -259,8 +273,10 @@ Graph:
 
                                            PRACTICAL 3
 Aim: To find time complexity of combining two sorted sort and to represent it through graph.
+
 Description:
 This C++ code implements a function to merge two sorted arrays into a third sorted array. It measures the average time taken to perform this operation for increasing array sizes (from 10,000 to 1,000,000 elements) and records the timing data in a file named "data.txt" while displaying the results on the console.
+
 Algorithm:
 Combining two sorted list
 1.	Define a function sorted_list(list1, list2, n, m) to merge two sorted lists list1 and list2 of sizes n and m, respectively, into a sorted list list3.
@@ -303,8 +319,10 @@ Graph:
 
                                            PRACTICAL 4
 Aim: To find time complexity of code for finding actual position and to represent it through graph.
+
 Description:
 This C++ code implements the partitioning step of the quicksort algorithm to arrange elements such that all elements smaller than a chosen pivot are placed before it, and all greater elements are placed after it. It measures the average time taken to perform this operation for increasing array sizes (from 1,000 to 100,000 elements) with randomly generated elements, recording the timing data in a file named "data.txt" and displaying the results on the console.
+
 Algorithm:
 To find actual position of number
 1.	Define a function actual_pst(a, n, el) to rearrange the elements in an array a[] such that all elements less than el are before it, and all elements greater than el are after it. The function also returns the index of the first occurrence of el in the original array.
@@ -344,8 +362,10 @@ Graph:
                                                                               LAB 3
                                            PRACTICAL 1
 Aim: To find time complexity of Merge Sort and to represent it through graph.	
+
 Description:
 This C++ code implements the merge sort algorithm and measures the average time taken to sort randomly generated arrays of increasing sizes (from 1 to 10,000 elements). It records the timing data in two separate files ("data.txt" and "data2.txt") for different scale factors, demonstrating the time complexity of merge sort as (O(nlogn)). Additionally, it includes a function (`complex()`) to calculate and write the time complexity data based on (nlog n) for comparison.
+
 Algorithm:
 Merge
 1.	Calculate the sizes of the subarrays: n1 = mid - left + 1 and n2 = right - mid.
@@ -377,8 +397,10 @@ Graph:
 
                                            PRACTICAL 2
 Aim: To find time complexity of Quick Sort and to represent it through graph.
+
 Description:
 This C++ code implements the quicksort algorithm and measures the average time taken to sort randomly generated arrays of increasing sizes (from 1 to 10,000 elements). It records the timing data in "data.txt" and "data2.txt" for different scale factors, showcasing the time complexity of quicksort as (O(n log n)). Additionally, it includes functions (`average()` and `worst()`) to calculate and write the time complexity data based on (n log n) and (n^2), respectively, for comparison.
+
 Algorithm:
 Partition
 1.	Define a function Partition(a, low, high) to partition the array a[] into two halves around a pivot element.
@@ -432,8 +454,10 @@ Graph:
 
                                            PRACTICAL 3
 Aim: To find time complexity of Maximum and minimum through iteration and merge sort and to compare it through graph.
+
 Description:
 This C++ code implements functions to find the maximum and minimum elements in an array using both recursive and iterative approaches. It measures the average time taken to find the maximum and minimum elements for array sizes ranging from 100 to 900 elements, repeating the process 10 times for each array size, and records the timing data in "data.txt" and "data2.txt" for analysis and comparison between the recursive and iterative methods.
+
 Algorithm:
 MaxMinIterative
 1.	Define a function MaxMinIterative(a, low, high) to find the maximum and minimum elements in an array a[] iteratively.
@@ -489,8 +513,10 @@ Graph:
 
                                            PRACTICAL 4
 Aim: To find time complexity of Matrix Multiplication through divide and conquer and to represent it through graph.
+
 Description:
 This C++ code implements matrix multiplication using the Strassen's algorithm and measures the average time taken for matrix multiplication of randomly generated square matrices of increasing sizes (from 2x2 to 256x256). It records the timing data in "data.txt" for analysis and includes a function (`complexity()`) to calculate and write the time complexity data based on ( n^3 ) for comparison.
+
 Algorithm:
 add_matrices Function:
 1.	Parameters: Two matrices A and B.
@@ -527,8 +553,10 @@ Graph:
 
                                            PRACTICAL 5
 Aim: To find time complexity of Strassens Multiplication and to represent it through graph.
+
 Description:
 This C++ code implements matrix multiplication using the Strassen's algorithm, which is a divide-and-conquer approach to efficiently multiply matrices. It measures the average time taken for matrix multiplication of randomly generated square matrices of increasing sizes (from 2x2 to 256x256) and records the timing data in "data.txt" for analysis. Additionally, it includes a function (`complexity()`) to calculate and write the time complexity data based on ( n^2.81 ) for comparison.
+
 Algorithm:
 Divide the Matrices:
 1.	Given two matrices A and B, divide them into four equal-size submatrices each:
@@ -596,8 +624,10 @@ Graph:
                                                                               LAB 4
                                            PRACTICAL 1
 Aim: To find time complexity of Activity Selector and to represent it through graph.
+
 Description:
 This C++ code implements a scheduling algorithm using the Activity Selection (AS) algorithm. It generates random start times, finish times, and profits for activities, sorts them based on start and finish times, and then applies the AS algorithm to select a non-overlapping set of activities that maximize profit. The code measures the average time taken for this process across multiple iterations and records the results in a file.
+
 Algorithm:
 Sorting (Start) Function
 1.	Define a function Sort_start(int s[],int n) for sorting the start array of every instance.
@@ -659,8 +689,10 @@ Graph:
 
                                           PRACTICAL 2
 Aim: To find time complexity of Iterative QuickSort and to represent it through graph.
+
 Description:
 This C++ code implements an iterative version of the QuickSort algorithm using a stack for partitioning and sorting an array of integers. It generates random integer arrays of increasing sizes, applies QuickSort iteratively for 10 iterations on each array, measures the average time taken, and records the results in a file for analysis.
+
 Algorithm:
 Swap 
 1.	Define a function Swap(a,b) for Swapping.
@@ -702,8 +734,10 @@ Graph:
  
                                            PRACTICAL 3
 Aim: To find time complexity of KnapSack and to represent it through graph.
+
 Description:
 This C++ program implements a knapsack algorithm with three different strategies: sorting by profit, sorting by weight, and sorting by profit-to-weight ratio. It generates random profit and weight values for items, sorts them based on the selected strategy, and calculates the average time taken to solve the knapsack problem for each strategy over multiple iterations. The results are then written to separate files for analysis.
+
 Algorithm:
 Sort_profits
 1.	Define a function sort_profit(p, w, n) for sorting according to profit in descending order.
@@ -768,8 +802,10 @@ Graph:
                                                                               LAB 5
                                            PRACTICAL 1
 Aim: To find time complexity of Shortest Distance (Dijkstra) and to represent it through graph.
+
 Description:
 This C++ program implements the Single-Source Shortest Path (SSSP) algorithm using Dijkstra's approach. It generates random cost values for edges in a graph and calculates the shortest paths from a source vertex to all other vertices. The average time taken to perform the SSSP algorithm over multiple iterations for varying graph sizes is computed and written to a file for analysis.
+
 Algorithm:
 Shortest Distance (Dijkstra)
 1.	Define a function sssp(n, cost, v, dist) for finding the shortest distance from each point.
@@ -812,8 +848,10 @@ Graph:
 
                                            PRACTICAL 2
 Aim: To find time complexity of Prims Algorithm and to represent it through graph.
+
 Description:
 This C++ program implements Prim's algorithm for finding the Minimum Spanning Tree (MST) of a graph. It generates random cost values for edges in the graph, applies Prim's algorithm multiple times to calculate the average time taken for varying graph sizes, and writes the results to a file for analysis.
+
 Algorithm:
 Prims
 1.	Define a function prims(cost,n,t) for finding the shortest distance from each vertex.
@@ -865,8 +903,10 @@ Graph:
 
                                          PRACTICAL 3
 Aim: To find time complexity of Kruskal Algorithm and to represent it through graph.
+
 Description:
 This C++ program implements Kruskal's algorithm to find the Minimum Spanning Tree (MST) of a graph. It generates random edges with weights, applies Kruskal's algorithm multiple times for different graph sizes, calculates the average time taken, and writes the results to a file for analysis. The program uses a union-find data structure and a min-heap to efficiently process edges and construct the MST.
+
 Algorithm:
 Find Function
 1.	Define a function find(p,i) for finding next vertex.
@@ -921,3 +961,320 @@ Graph:
 
 
 
+
+
+             LAB 6
+                                           PRACTICAL 1
+Aim: To calculate the minimum cost to reach from a source point to the other point in multistage graph. 
+
+Description:
+A multistage graph is a directed graph where the nodes are divided into multiple stages, and edges only connect nodes from one stage to the next. It's often used to model problems involving a sequence of decisions or actions, such as production processes or project planning, where each stage represents a distinct phase or step. Algorithms like Dijkstra's or dynamic programming are commonly used to solve optimization problems on multistage graphs.
+
+Algorithm:
+Stage Function (stage):
+•	This function recursively calculates the number of stages in the DAG starting from a given node i. It increments the count parameter for each recursive call until it reaches the last node (n - 1), where it returns the count.
+Find Function (find_fun):
+•	This function is used to find the minimum cost edge from node j to other nodes in the graph. It iterates over the edges starting from j + 1 and calculates the minimum cost using the fcost array.
+FCost Function (fcost):
+•	This function calculates the minimum cost and the path for a given number of stages (k) in the DAG.
+•	It initializes arrays d and fcost to store intermediate results.
+•	It starts from the second-to-last node (n - 2) and uses the find_fun function to compute the minimum cost for each node.
+•	It then constructs the path (p) based on the minimum cost values.
+Main Function:
+•	In the main function, a sample DAG represented by an adjacency matrix (graph) is defined.
+•	It calculates the number of stages in the DAG using the stage function and prints it.
+•	It then calls the fcost function to find the minimum cost and path for a specified number of stages (k).
+
+Time Complexity:
+For the multistage graph algorithm:
+1.	Best-case time complexity: O(V + E) + O(V^2) ≈ O(V^2) for sparse graphs.
+2.	Average-case time complexity: O(V + E) + O(V^2) ≈ O(V^2) for typical graphs.
+3.	Worst-case time complexity: O(V + E) + O(V^2) ≈ O(V^2) for dense graphs.
+
+
+
+                                           PRACTICAL 2
+Aim: All pair shortest path.
+
+Description:
+The All-Pairs Shortest Path (APSP) algorithm calculates the shortest path between all pairs of vertices in a weighted graph. It's commonly solved using algorithms like Floyd-Warshall or Johnson's algorithm. Floyd-Warshall has a time complexity of O(V^3) where V is the number of vertices, making it suitable for dense graphs and small to medium-sized graphs. Johnson's algorithm is more efficient for sparse graphs with a time complexity of O(V^2 log V + VE), where E is the number of edges, but it requires non-negative edge weights.
+
+Algorithm:
+Initialization:
+•	Initialize an adjacency matrix graph representing the weighted edges between vertices. Use a large value (INF) to represent infinity or absence of an edge.
+•	Initialize matrices dist and pred of size VxV to store the shortest distances and predecessor vertices for each pair of vertices.
+•	Initialize dist[i][j] with the weight of the edge between vertex i and j, and set pred[i][j] = i if there is an edge, otherwise set pred[i][j] = -1.
+Floyd-Warshall Algorithm:
+•	Iterate through all vertices (k) and for each pair of vertices (i, j):
+•	If there exists a shorter path from vertex i to j through vertex k, update dist[i][j] and pred[i][j].
+•	Update dist[i][j] to dist[i][k] + dist[k][j] if it's smaller than the current value.
+•	Update pred[i][j] to the predecessor vertex on the shortest path.
+Printing Shortest Paths:
+•	After running the algorithm, iterate through all pairs of vertices (i, j) and print the shortest distance from i to j and the corresponding path using the printPath function.
+
+Time Complexity: 
+For the All-Pairs Shortest Path (APSP) algorithm using Floyd-Warshall:
+1.	Best-case time complexity: O(V^2) (V is the number of vertices) for sparse graphs.
+2.	Average-case time complexity: O(V^3) (V is the number of vertices) for typical graphs.
+3.	Worst-case time complexity: O(V^3) (V is the number of vertices) for dense graphs.
+
+
+
+                                           PRACTICAL 3
+Aim: Write a program for assembly line program.
+
+Description:
+The assembly line scheduling problem involves optimizing the production process in a manufacturing environment with multiple assembly lines. It typically aims to minimize the total time or cost of production while meeting various constraints such as resource availability, capacity limits, and production sequence requirements. This problem is often solved using dynamic programming or other optimization techniques tailored to specific production line configurations and constraints.
+
+Algorithm:
+1.	Initialization:
+•	Initialize arrays f1, f2, l1, and l2 to store the earliest possible time to finish on each line and the line used at each stage.
+•	Set f1[0] = e1 + a[0][0] and f2[0] = e2 + a[1][0] as the entry times for the first stations on lines 1 and 2, respectively.
+2.	Dynamic Programming Loop:
+•	Iterate through the remaining stations (j = 1 to n - 1):
+•	Calculate f1[j] and l1[j] using the recurrence relation based on the minimum time from the previous station on line 1 or transferring from line 2.
+•	Calculate f2[j] and l2[j] similarly for line 2.
+•	Choose the minimum time between line 1 and line 2 for each station.
+3.	Final Calculation:
+•	Compare the finish times at the last station with the exit times (x1, x2) to determine the overall minimum time (fstar) and the line used at the last station (lstar).
+4.	Output:
+•	Print the minimum time (fstar) as the result.
+•	Print the assembly path by tracing back through the lines from the last station using the lstar, l1, and l2 arrays.
+
+Time Complexity: 
+The time complexity analysis for the assembly line scheduling algorithm is as follows:
+1.	Best-case time complexity: O(n), where n is the number of stations. This is because the algorithm involves a single pass through the stations, performing constant-time operations at each station.
+2.	Average-case time complexity: O(n), similar to the best-case scenario, as the algorithm's performance is primarily determined by the number of stations and the constant-time operations within each iteration.
+3.	Worst-case time complexity: O(n), which occurs when there are many stations. In this case, the algorithm still performs a single pass through all stations, resulting in a linear time complexity relative to the number of stations.
+
+
+
+                                           PRACTICAL 4
+Aim: To find the longest common subsequence between two strings using dynamic programming.
+
+Description:
+The Longest Common Subsequence (LCS) algorithm using dynamic programming finds the longest subsequence shared between two strings. It creates a matrix to store intermediate results, filling it by comparing characters in the strings. The algorithm then traces back through the matrix to reconstruct the LCS. Its time complexity is O(m*n), where m and n are the lengths of the input strings.
+
+Algorithm:
+1.	Initialization:
+•	Initialize a 2D array L[m+1][100] to store the lengths of LCSs for substrings of X and Y.
+•	Initialize the first row and column of L with zeros, as LCS with an empty string is zero.
+2.	Dynamic Programming Loop:
+•	Iterate through the substrings of X and Y using nested loops.
+•	If the characters at the current positions in X and Y match, increment L[i][j] by 1.
+•	Otherwise, set L[i][j] to the maximum of L[i-1][j] and L[i][j-1], as LCS can be formed by skipping characters in either string.
+3.	Backtracking for LCS:
+•	Using the computed L array, backtrack to reconstruct the LCS by following the arrows (left, up, or diagonal) based on the values in L.
+4.	Print LCS with Arrows:
+•	Print the LCS along with arrows (<- or ^|) to indicate the direction of backtracking.
+5.	Main Function:
+•	Initialize strings S1 and S2.
+•	Call the lcs function to compute the length of the LCS and print the LCS with arrows.
+
+Time Complexity: 
+The time complexity of the Longest Common Subsequence (LCS) algorithm using dynamic programming can be summarized as follows:
+1.	Best-case time complexity: O(m * n), where m and n are the lengths of the input strings X and Y, respectively. This occurs when the strings have no common characters, leading to a trivial LCS of length zero.
+2.	Average-case time complexity: O(m * n), where m and n are the lengths of the input strings X and Y, respectively. This average complexity is typical for most cases where the strings have varying lengths and share some common characters.
+3.	Worst-case time complexity: O(m * n), where m and n are the lengths of the input strings X and Y, respectively. This worst-case scenario occurs when the LCS spans the entire lengths of both strings, resulting in the dynamic programming table being filled completely.
+
+
+
+                                                                              LAB 7
+                                           PRACTICAL 1
+Aim: Knapsack using dynamic programming.
+
+Description:
+The Knapsack problem using dynamic programming (DP) optimally selects items to maximize value within a weight limit. It fills a matrix based on item weights and values, computing optimal values for different weight capacities. The algorithm then backtracks to determine which items were selected. Its time complexity is O(n*W), where n is the number of items and W is the knapsack capacity.
+
+Algorithm:
+Initialization:
+•	Create a 2D vector K of size (n+1) * (W+1) to store the maximum values for different weights and items.
+Dynamic Programming Loop:
+•	Iterate through all items and weights using nested loops.
+•	If the weight of the current item is less than or equal to the current weight limit, update K[i][w] to the maximum value between adding the current item's value to the maximum value obtained so far with the remaining weight (K[i-1][w - wt[i-1]]) and not adding the current item (K[i-1][w]).
+•	If the weight of the current item exceeds the weight limit, set K[i][w] to the value obtained without including the current item (K[i-1][w]).
+Backtracking for Solution:
+•	After filling the K matrix, backtrack to find the selected items that contribute to the maximum value.
+•	Start from K[n][W] and move upwards, checking if the value differs from the value in the row above (K[i-1][w]). If it differs, include the item in the solution and move to the previous row and reduced weight (w - wt[i-1]).
+Print Solution:
+•	Print the selected items that maximize the value of the knapsack.
+Main Function:
+•	Initialize vectors for values (val) and weights (wt).
+•	Specify the knapsack weight limit (W).
+•	Call the knapsackDP function to compute the maximum value and print the selected items.
+
+Time Complexity:
+•	Best-case time complexity: O(n*W), where n is the number of items and W is the maximum capacity of the knapsack.
+•	Average-case time complexity: O(n*W), typical for most inputs.
+•	Worst-case time complexity: O(n*W), which occurs when the knapsack capacity is large compared to the number of items.
+
+
+
+
+
+                                           PRACTICAL 2
+Aim: Write a program for minimizing the scalar matrix multiplications.
+
+Description: 
+The algorithm for minimizing scalar matrix multiplication using dynamic programming involves finding the optimal order of multiplying matrices to minimize the total scalar multiplications. It creates a matrix to store intermediate results and computes the minimum cost recursively. The time complexity is O(n^3), where n is the number of matrices.
+
+Algorithm:
+Initialization:
+•	Create a 2D array m[n][n] to store the minimum number of multiplications for multiplying matrices.
+•	Create a 2D array brac[5][5] (using fixed size for demonstration) to store information about the optimal placement of parentheses for matrix multiplication.
+Base Case:
+•	Set m[i][i] = 0 for all diagonal elements, representing the base case where a single matrix multiplication requires no additional multiplications.
+Dynamic Programming Loop:
+•	Use nested loops to fill the m array diagonally.
+•	Iterate over different chain lengths L (from 2 to n, where n is the number of matrices).
+•	For each chain length, iterate over all possible starting indices i.
+•	Compute the minimum number of multiplications m[i][j] required to multiply matrices from index i to j using a third index k as a split point.
+•	Update m[i][j] and brac[i][j] if a better (minimum) number of multiplications is found.
+Optimal Parenthesization:
+•	Use a recursive function printParenthesis to print the optimal placement of parentheses for matrix multiplication based on the information stored in the brac array.
+Main Function:
+•	Initialize an array arr with the dimensions of matrices.
+•	Call the MatrixChainOrder function to compute the minimum number of multiplications and print the optimal parenthesization.
+
+Time complexity:
+Therefore, the time complexity of the Matrix Chain Multiplication algorithm using dynamic programming is:
+•	Best-case time complexity: O(n^3)
+•	Average-case time complexity: O(n^3)
+•	Worst-case time complexity: O(n^3)
+
+
+
+                                           PRACTICAL 3
+Aim: Write a program N-Queens.
+
+Description:
+The N-Queens problem algorithm using backtracking involves placing N queens on an N×N chessboard such that no two queens threaten each other. It recursively explores possible placements and backtracks when a conflict is encountered. 
+
+Algorithm:
+1.	Function place(k, i)
+•	Inputs: k represents the current row being considered, and i represents the column to be checked for placing a queen.
+•	Output: Returns true if a queen can be placed at position (k, i) without conflicting with previously placed queens, false otherwise.
+•	Iterate over all previously placed queens (from 1 to k-1) and check if the current position conflicts with any of them:
+•	If the current position is in the same column as a previous queen (x[j] == i), or
+•	If the current position is in the same diagonal as a previous queen (abs(x[j] - i) == abs(j - k)), indicating a diagonal conflict.
+•	Return true if no conflicts are found, indicating that a queen can be placed at the current position without attacking other queens.
+2.	Function Nqueens(k, n)
+•	Inputs: k represents the current row being processed, and n is the total number of rows/columns (size of the chessboard).
+•	Recursively attempts to place queens on each row starting from row 1 up to row n.
+•	For each row, iterates over all columns (from 1 to n) and checks if placing a queen at that position is valid using the place function.
+•	If a valid position is found (place(k, i) returns true), marks that position as a queen (x[k] = i) and recursively calls Nqueens(k + 1, n) to move to the next row.
+•	If all queens are successfully placed (k == n), prints the arrangement of queens as a solution.
+•	Backtracks by undoing the placement of the queen and exploring other positions if no valid position is found for a given row.
+3.	Main Function:
+•	Takes input for the number of queens (n).
+•	Calls the Nqueens function to start the recursive search for solutions.
+•	Prints solutions found during the recursive search.
+
+Time Complexity:
+For the N-Queens problem algorithm using backtracking, the time complexity is as follows:
+•	Best-case time complexity: O(1) when the solution is found quickly (rare in practice).
+•	Average-case time complexity: O(n!) for typical scenarios where backtracking explores various possibilities.
+•	Worst-case time complexity: O(n!) when backtracking explores all possibilities extensively.
+
+
+
+
+                                                                              LAB 8
+                                           PRACTICAL 1
+Aim: Write a program Knapsack using backtracking.
+
+Description:
+The Knapsack problem using backtracking involves finding the optimal combination of items to maximize the value while respecting a weight constraint. It explores different combinations recursively, making decisions at each step based on whether adding an item is feasible and improves the total value. It backtracks when a dead-end is reached, optimizing the selection process for efficiency.
+
+Algorithm:
+Function print(s):
+•	Print the elements of the set.
+Function find_max_value(s):
+•	Find the maximum value (first element) in the set.
+Function find_max_path(s, max_value, p, w):
+•	Find the path of items that contribute to the maximum value.
+•	Iterate through the set and select items that contribute to the maximum value without exceeding weight constraints.
+Function merge_purge(s1, s2, W):
+•	Merge two sets while purging elements that violate weight constraints.
+•	Iterate through elements of both sets, checking weight constraints and maximizing value.
+Function knapsackMP(n, p, w, W):
+•	Initialize an empty set s1 with a single element {0, 0}.
+•	Iterate through each item:
+•	Create a new set s2 by adding the current item to each element of s1.
+•	Merge s1 and s2 while purging elements violating weight constraints.
+•	Print the resulting set s1.
+•	Find the maximum value in s1 using find_max_value.
+•	Find the path of items contributing to the maximum value using find_max_path.
+•	Print the maximum value and the selected items contributing to it.
+Main Function:
+•	Initialize input variables (number of items n, values p, weights w, and knapsack capacity W).
+•	Call knapsackMP with the input parameters.
+
+Time complexity:
+For the N-Queens problem algorithm using backtracking, the time complexity is as follows:
+•	Best-case time complexity: O(1) when the solution is found quickly (rare in practice).
+•	Average-case time complexity: O(n2) for typical scenarios where backtracking explores various possibilities.
+•	Worst-case time complexity: O(n2) when backtracking explores all possibilities extensively.
+The O(2n) complexity arises because backtracking explores both including and excluding each item in the knapsack, leading to an exponential number of subproblems and choices. However, pruning techniques like memoization or dynamic programming can improve the average-case performance significantly in practice.
+
+
+
+
+                                           PRACTICAL 2
+Aim: Write a program for coloring m nodes using backtracking.
+
+Description:
+Coloring m nodes involves assigning colors to a graph's nodes such that no two adjacent nodes share the same color, using a maximum of m colors. The algorithm recursively explores possible color assignments, backtracking when conflicts arise until a valid coloring or a failure is reached. It optimizes the coloring process by making efficient color choices and exploring different possibilities.
+
+Algorithm:
+Define Global Variables:
+•	Create a global array x to store colors for vertices. Initialize all elements to 0 initially.
+•	Set a constant infinity to represent an invalid color.
+Define Functions: 
+a. nextval(k, n, m, G):
+•	Increment the color of vertex k by 1 (x[k] = (x[k] + 1) % (m + 1)).
+•	If the color becomes 0 (meaning all colors have been tried), return.
+•	Check if the new color conflicts with adjacent vertices:
+•	For each vertex i connected to k (i.e., G[k][i] != 0), if x[i] == x[k], there is a conflict. In this case, break the loop.
+•	If no conflicts are found, continue the loop.
+          b. mcoloring(k, G, n, m):
+•	Call nextval(k, n, m, G) to assign colors to vertex k.
+•	If x[k] becomes 0 (no valid color found), return.
+•	If all vertices are colored (k == n), print the colors in x and return.
+•	Otherwise, recursively call mcoloring(k + 1, G, n, m) to color the next vertex.
+Main Function:
+•	Initialize the graph G, number of vertices n, and number of colors m.
+•	Call mcoloring(0, G, n, m) to start coloring the vertices.
+
+Time Complexity:
+Time complexity for coloring m nodes:
+1.	Best-case Time Complexity: O(m^n)
+2.	Average-case Time Complexity: O(m^n * n^2)
+3.	Worst-case Time Complexity: O(m^n * n^2)
+
+
+
+                                           PRACTICAL 3
+Aim: Write a program for finding sum of subsets using backtracking.
+
+Description:
+The Sum of Subsets problem using backtracking involves finding all subsets of a given set whose elements sum up to a specified target sum. The algorithm explores different combinations of elements, tracking the current sum and including or excluding elements to meet the target sum. It backtracks when a subset exceeds the target sum or when all possibilities are exhausted, efficiently exploring only promising paths.
+
+Algorithm:
+  Initialize arrays w[] (weights), x[] (solution vector), and variables m (target sum), n   (size of the array), r (sum of all elements).
+  Define the function sumofsubsets(s, k, sum):
+    a. Set x[k] = 1, representing including the k-th element in the subset.
+    b. If the current sum s + w[k] equals the target sum m, print the subset and backtrack.
+    c. Else, if including the next element (w[k + 1]) along with the current sum is still within the target sum (s + w[k] + w[k + 1] <= m), recursively call sumofsubsets with updated parameters.
+    d. Set x[k] = 0, representing excluding the k-th element in the subset.
+    e. If excluding the k-th element keeps the sum within the target range and there are more elements to consider, recursively call sumofsubsets with updated parameters.
+  In the main function:
+    a. Input the size of the array n and the target sum m.
+    b. Input the array elements w[] and calculate the total sum r.
+    c. Call sumofsubsets(0, 0, r) to start the backtracking process from the first element with an empty subset and the total sum.
+    
+Time complexity:
+The time complexity of the Subset Sum problem solved using backtracking can be summarized as follows:
+1.	Best-case time complexity: O(2^n) when the target sum is achieved early in the search tree, resulting in a quick solution.
+2.	Average-case time complexity: O(2^n) for typical scenarios where the search explores various branches of the search tree before finding a solution.
+3.	Worst-case time complexity: O(2^n) when the search tree is fully explored, considering all possible subsets.
