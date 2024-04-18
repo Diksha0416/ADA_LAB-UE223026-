@@ -8,11 +8,17 @@ This C++ code measures the average time taken to sort randomly generated arrays 
 
 Algorithm:
 1. Selection Sort
+   
 •	Start with the first element as the minimum.
+
 •	Compare the minimum element with the next element in the array.
+
 •	If the next element is smaller, update the minimum element.
+
 •	Repeat steps 2 and 3 for all elements in the array.
+
 •	Swap the minimum element with the first unsorted element.
+
 •	Move to the next unsorted element and repeat steps 2-5 until the entire array is sorted.
 
 Time Complexity:
@@ -48,13 +54,20 @@ Description:
 This C++ code implements the Tower of Hanoi problem using recursion. It defines a function th() to solve the Tower of Hanoi problem for a given number of disks (n) and outputs the moves to transfer disks from the source peg to the destination peg. The Algo() function measures the average time taken to solve the Tower of Hanoi problem for different numbers of disks (from 1 to 9) and writes this data to a file named "data.txt" in CSV format. The main() function calls Algo() to perform these operations.
 
 Algorithm:
-1. Tower of Hanoi 
+1. Tower of Hanoi
+   
 a.	Define a function th(n, source, destination, spare) to move n disks from the source peg to the destination peg using the spare peg as an auxiliary.
+
 b.	If n equals 1:
+
 •	Print the move of the disk from the source peg to the destination peg.
+
 c.	Else:
+
 •	Recursively call th(n-1, source, spare, destination) to move n-1 disks from the source peg to the spare peg using the destination peg as an auxiliary.
+
 •	Print the move of the nth disk from the source peg to the destination peg.
+
 •	Recursively call th(n-1, spare, destination, source) to move n-1 disks from the spare peg to the destination peg using the source peg as an auxiliary.
 
 Time Complexity:
