@@ -1236,11 +1236,10 @@ Algorithm:
 •	Call knapsackMP with the input parameters.
 
 Time complexity:
-For the N-Queens problem algorithm using backtracking, the time complexity is as follows:
-1.	Best-case time complexity: O(1) when the solution is found quickly (rare in practice).
-2.	Average-case time complexity: O(n2) for typical scenarios where backtracking explores various possibilities.
-3.	Worst-case time complexity: O(n2) when backtracking explores all possibilities extensively.
-The O(2n) complexity arises because backtracking explores both including and excluding each item in the knapsack, leading to an exponential number of subproblems and choices. However, pruning techniques like memoization or dynamic programming can improve the average-case performance significantly in practice.
+Certainly, here are the time complexities for the Knapsack problem using backtracking in single lines for each case:
+1.	Best Case Time Complexity: O(1) (constant time).
+2.	Worst Case Time Complexity: O(2^n), where n is the number of items.
+3.	Average Case Time Complexity: O(nW), where n is the number of items and W is the capacity of the knapsack, with optimizations like memoization.
 
 
 
