@@ -7,7 +7,7 @@ Description:
 This C++ code measures the average time taken to sort randomly generated arrays using the selection sort algorithm and writes this data to a file named "data.txt". It utilizes functions for file writing, selection sorting, and timing measurements to analyze sorting performance for different array sizes.
 
 Algorithm:
-Selection Sort
+1. Selection Sort
 •	Start with the first element as the minimum.
 •	Compare the minimum element with the next element in the array.
 •	If the next element is smaller, update the minimum element.
@@ -48,7 +48,7 @@ Description:
 This C++ code implements the Tower of Hanoi problem using recursion. It defines a function th() to solve the Tower of Hanoi problem for a given number of disks (n) and outputs the moves to transfer disks from the source peg to the destination peg. The Algo() function measures the average time taken to solve the Tower of Hanoi problem for different numbers of disks (from 1 to 9) and writes this data to a file named "data.txt" in CSV format. The main() function calls Algo() to perform these operations.
 
 Algorithm:
-Tower of Hanoi 
+1. Tower of Hanoi 
 a.	Define a function th(n, source, destination, spare) to move n disks from the source peg to the destination peg using the spare peg as an auxiliary.
 b.	If n equals 1:
 •	Print the move of the disk from the source peg to the destination peg.
@@ -1094,27 +1094,30 @@ The Knapsack problem using dynamic programming (DP) optimally selects items to m
 
 Algorithm:
 
-Initialization:
+1. Initialization:
 •	Create a 2D vector K of size (n+1) * (W+1) to store the maximum values for different weights and items.
 
-Dynamic Programming Loop:
+2.Dynamic Programming Loop:
 •	Iterate through all items and weights using nested loops.
 •	If the weight of the current item is less than or equal to the current weight limit, update K[i][w] to the maximum value between adding the current item's value to the maximum value obtained so far with the remaining weight (K[i-1][w - wt[i-1]]) and not adding the current item (K[i-1][w]).
 •	If the weight of the current item exceeds the weight limit, set K[i][w] to the value obtained without including the current item (K[i-1][w]).
-Backtracking for Solution:
+
+3. Backtracking for Solution:
 •	After filling the K matrix, backtrack to find the selected items that contribute to the maximum value.
 •	Start from K[n][W] and move upwards, checking if the value differs from the value in the row above (K[i-1][w]). If it differs, include the item in the solution and move to the previous row and reduced weight (w - wt[i-1]).
-Print Solution:
+
+4. Print Solution:
 •	Print the selected items that maximize the value of the knapsack.
-Main Function:
+
+5. Main Function:
 •	Initialize vectors for values (val) and weights (wt).
 •	Specify the knapsack weight limit (W).
 •	Call the knapsackDP function to compute the maximum value and print the selected items.
 
 Time Complexity:
-•	Best-case time complexity: O(n*W), where n is the number of items and W is the maximum capacity of the knapsack.
-•	Average-case time complexity: O(n*W), typical for most inputs.
-•	Worst-case time complexity: O(n*W), which occurs when the knapsack capacity is large compared to the number of items.
+1.	Best-case time complexity: O(n*W), where n is the number of items and W is the maximum capacity of the knapsack.
+2.	Average-case time complexity: O(n*W), typical for most inputs.
+3.  Worst-case time complexity: O(n*W), which occurs when the knapsack capacity is large compared to the number of items.
 
 
 
@@ -1127,10 +1130,11 @@ Description:
 The algorithm for minimizing scalar matrix multiplication using dynamic programming involves finding the optimal order of multiplying matrices to minimize the total scalar multiplications. It creates a matrix to store intermediate results and computes the minimum cost recursively. The time complexity is O(n^3), where n is the number of matrices.
 
 Algorithm:
-Initialization:
+
+1. Initialization:
 •	Create a 2D array m[n][n] to store the minimum number of multiplications for multiplying matrices.
 •	Create a 2D array brac[5][5] (using fixed size for demonstration) to store information about the optimal placement of parentheses for matrix multiplication.
-Base Case:
+2. Base Case:
 •	Set m[i][i] = 0 for all diagonal elements, representing the base case where a single matrix multiplication requires no additional multiplications.
 Dynamic Programming Loop:
 •	Use nested loops to fill the m array diagonally.
@@ -1138,17 +1142,17 @@ Dynamic Programming Loop:
 •	For each chain length, iterate over all possible starting indices i.
 •	Compute the minimum number of multiplications m[i][j] required to multiply matrices from index i to j using a third index k as a split point.
 •	Update m[i][j] and brac[i][j] if a better (minimum) number of multiplications is found.
-Optimal Parenthesization:
+3. Optimal Parenthesization:
 •	Use a recursive function printParenthesis to print the optimal placement of parentheses for matrix multiplication based on the information stored in the brac array.
-Main Function:
+4. Main Function:
 •	Initialize an array arr with the dimensions of matrices.
 •	Call the MatrixChainOrder function to compute the minimum number of multiplications and print the optimal parenthesization.
 
 Time complexity:
 Therefore, the time complexity of the Matrix Chain Multiplication algorithm using dynamic programming is:
-•	Best-case time complexity: O(n^3)
-•	Average-case time complexity: O(n^3)
-•	Worst-case time complexity: O(n^3)
+1.	Best-case time complexity: O(n^3)
+2.	Average-case time complexity: O(n^3)
+3.	Worst-case time complexity: O(n^3)
 
 
 
@@ -1180,9 +1184,9 @@ Algorithm:
 
 Time Complexity:
 For the N-Queens problem algorithm using backtracking, the time complexity is as follows:
-•	Best-case time complexity: O(1) when the solution is found quickly (rare in practice).
-•	Average-case time complexity: O(n!) for typical scenarios where backtracking explores various possibilities.
-•	Worst-case time complexity: O(n!) when backtracking explores all possibilities extensively.
+1.	Best-case time complexity: O(1) when the solution is found quickly (rare in practice).
+2.	Average-case time complexity: O(n!) for typical scenarios where backtracking explores various possibilities.
+3.	Worst-case time complexity: O(n!) when backtracking explores all possibilities extensively.
 
 
 
@@ -1195,17 +1199,17 @@ Description:
 The Knapsack problem using backtracking involves finding the optimal combination of items to maximize the value while respecting a weight constraint. It explores different combinations recursively, making decisions at each step based on whether adding an item is feasible and improves the total value. It backtracks when a dead-end is reached, optimizing the selection process for efficiency.
 
 Algorithm:
-Function print(s):
+1. Function print(s):
 •	Print the elements of the set.
-Function find_max_value(s):
+2. Function find_max_value(s):
 •	Find the maximum value (first element) in the set.
-Function find_max_path(s, max_value, p, w):
+3. Function find_max_path(s, max_value, p, w):
 •	Find the path of items that contribute to the maximum value.
 •	Iterate through the set and select items that contribute to the maximum value without exceeding weight constraints.
-Function merge_purge(s1, s2, W):
+4. Function merge_purge(s1, s2, W):
 •	Merge two sets while purging elements that violate weight constraints.
 •	Iterate through elements of both sets, checking weight constraints and maximizing value.
-Function knapsackMP(n, p, w, W):
+5. Function knapsackMP(n, p, w, W):
 •	Initialize an empty set s1 with a single element {0, 0}.
 •	Iterate through each item:
 •	Create a new set s2 by adding the current item to each element of s1.
@@ -1214,15 +1218,15 @@ Function knapsackMP(n, p, w, W):
 •	Find the maximum value in s1 using find_max_value.
 •	Find the path of items contributing to the maximum value using find_max_path.
 •	Print the maximum value and the selected items contributing to it.
-Main Function:
+6. Main Function:
 •	Initialize input variables (number of items n, values p, weights w, and knapsack capacity W).
 •	Call knapsackMP with the input parameters.
 
 Time complexity:
 For the N-Queens problem algorithm using backtracking, the time complexity is as follows:
-•	Best-case time complexity: O(1) when the solution is found quickly (rare in practice).
-•	Average-case time complexity: O(n2) for typical scenarios where backtracking explores various possibilities.
-•	Worst-case time complexity: O(n2) when backtracking explores all possibilities extensively.
+1.	Best-case time complexity: O(1) when the solution is found quickly (rare in practice).
+2.	Average-case time complexity: O(n2) for typical scenarios where backtracking explores various possibilities.
+3.	Worst-case time complexity: O(n2) when backtracking explores all possibilities extensively.
 The O(2n) complexity arises because backtracking explores both including and excluding each item in the knapsack, leading to an exponential number of subproblems and choices. However, pruning techniques like memoization or dynamic programming can improve the average-case performance significantly in practice.
 
 
@@ -1235,10 +1239,10 @@ Description:
 Coloring m nodes involves assigning colors to a graph's nodes such that no two adjacent nodes share the same color, using a maximum of m colors. The algorithm recursively explores possible color assignments, backtracking when conflicts arise until a valid coloring or a failure is reached. It optimizes the coloring process by making efficient color choices and exploring different possibilities.
 
 Algorithm:
-Define Global Variables:
+1. Define Global Variables:
 •	Create a global array x to store colors for vertices. Initialize all elements to 0 initially.
 •	Set a constant infinity to represent an invalid color.
-Define Functions: 
+2. Define Functions: 
 a. nextval(k, n, m, G):
 •	Increment the color of vertex k by 1 (x[k] = (x[k] + 1) % (m + 1)).
 •	If the color becomes 0 (meaning all colors have been tried), return.
@@ -1250,7 +1254,7 @@ a. nextval(k, n, m, G):
 •	If x[k] becomes 0 (no valid color found), return.
 •	If all vertices are colored (k == n), print the colors in x and return.
 •	Otherwise, recursively call mcoloring(k + 1, G, n, m) to color the next vertex.
-Main Function:
+3. Main Function:
 •	Initialize the graph G, number of vertices n, and number of colors m.
 •	Call mcoloring(0, G, n, m) to start coloring the vertices.
 
@@ -1269,14 +1273,14 @@ Description:
 The Sum of Subsets problem using backtracking involves finding all subsets of a given set whose elements sum up to a specified target sum. The algorithm explores different combinations of elements, tracking the current sum and including or excluding elements to meet the target sum. It backtracks when a subset exceeds the target sum or when all possibilities are exhausted, efficiently exploring only promising paths.
 
 Algorithm:
-  Initialize arrays w[] (weights), x[] (solution vector), and variables m (target sum), n   (size of the array), r (sum of all elements).
-  Define the function sumofsubsets(s, k, sum):
+  1. Initialize arrays w[] (weights), x[] (solution vector), and variables m (target sum), n   (size of the array), r (sum of all elements).
+  2. Define the function sumofsubsets(s, k, sum):
     a. Set x[k] = 1, representing including the k-th element in the subset.
     b. If the current sum s + w[k] equals the target sum m, print the subset and backtrack.
     c. Else, if including the next element (w[k + 1]) along with the current sum is still within the target sum (s + w[k] + w[k + 1] <= m), recursively call sumofsubsets with updated parameters.
     d. Set x[k] = 0, representing excluding the k-th element in the subset.
     e. If excluding the k-th element keeps the sum within the target range and there are more elements to consider, recursively call sumofsubsets with updated parameters.
-  In the main function:
+  3. In the main function:
     a. Input the size of the array n and the target sum m.
     b. Input the array elements w[] and calculate the total sum r.
     c. Call sumofsubsets(0, 0, r) to start the backtracking process from the first element with an empty subset and the total sum.
